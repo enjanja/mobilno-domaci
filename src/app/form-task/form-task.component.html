@@ -1,0 +1,66 @@
+<div class="columns is-centered">
+    <div class="column is-half">
+
+        <div class="field">
+            <label class="label">Title</label>
+            <div class="control">
+                <!-- input title -->
+                <input class="input" 
+                type="text" 
+                (input)="onAddTitle($event)"
+            />
+                
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Task description</label>
+            <div class="control">
+                <!-- input description -->
+                <input
+                    class="input"
+                    type="text"
+                    (input)="onAddDescription($event)"
+                 />
+            </div>
+        </div>
+
+        <!-- COMBO BOX -->
+        <div class="field custom-select">
+          <select (change)="selectPriority($event)" class="options">
+            <option value="None">None</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="field-button">
+            <button class="button is-link" (click)="onSetText()">Save</button>
+            <label class="output_message" [innerText]="message">Message</label>
+        </div>
+           
+        <!-- OUTPUT CARD -->
+        <div class="card">
+            <header class="card-header">
+              <p class="card-header-title"
+                [innerText]="set_title">
+                
+              </p>
+            </header>
+
+            <div class="card-content">
+              <div class="content">
+                <p [innerText]="set_description">Description</p>
+              </div>
+            </div>
+
+            <footer class="card-header">
+              <p class="card-header-title"
+                [innerText]="set_priority">Priority</p>
+            </footer>
+          </div>
+
+    </div>
+</div>

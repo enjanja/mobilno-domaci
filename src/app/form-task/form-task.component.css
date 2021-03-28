@@ -1,0 +1,47 @@
+.column{
+    margin: 5%;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: rgb(185, 195, 238);
+
+}
+
+.options{
+    height: 40px;
+    max-width: 100%;
+    width: 30%;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.card-header{
+    background-color: rgb(179, 184, 207);
+}
+.card-header-title{
+    color: white;
+}
+
+.card-content{
+    color: #4059c9;
+    background-color: rgb(235, 240, 240);
+}
+
+.field-button {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+button{
+    width: 100px;
+    background-color: #4059c9;
+}
+
+.output_message{
+    font-style: italic;
+    font-size: small;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+.card{
+    margin: 10px;
+}
